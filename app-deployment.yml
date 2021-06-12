@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-deployment
+  labels:
+    app: app-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app-pod
+  
+  template:
+    metadata:
+      name: app-pod
+      labels:
+        app: app-pod
+spec:
+    containers:
+      - name: blog-app-container
+        image: backend
+        imagePullPolicy: Never
+        ports:
+          - containerPort: 8080
