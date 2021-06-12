@@ -1,4 +1,4 @@
-# We are going to deploy the task of 1 with Kubernetes deployment file over here.
+# We are going to deploy the task A with Kubernetes deployment file over here.
 
 **#BACKEND # KANBAN-APP**
 We will build the kanban-app Dockerfile with below command:
